@@ -44,7 +44,7 @@ const notify =(title)=> toast(title)
  async function addDataToArray(objectWithId){
    setIsLoading(true)
    try{
-    const response = await fetch('https://expensesdatee-default-rtdb.firebaseio.com/expenses.json',{
+    const response = await fetch('https://expensesdate-default-rtdb.firebaseio.com/expenses.json',{
       method:"POST",
       body:JSON.stringify(objectWithId),
       headers:{
